@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin the Wheel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Spin the Wheel</h1>
+    <div class="wheel-wrapper">
+      <canvas id="wheel" width="500" height="500"></canvas>
+      <div class="pointer right"></div>
+    </div>
+    <div class="controls">
+      <input type="text" id="newItem" placeholder="Lägg till val...">
+      <button id="addItem">Lägg till</button>
+      <button id="spin">Snurra!</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <!-- Popup för resultat -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <p id="popup-text"></p>
+      <button id="removeOption">Ta bort från hjulet</button>
+      <button id="keepOption">Behåll</button>
+    </div>
+  </div>
+
+  <audio id="tickSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
